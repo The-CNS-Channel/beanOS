@@ -1,0 +1,28 @@
+{
+    "name": "beanOS Development",
+    "id": "beanOS",
+    "version": "1.0.0",
+    "description": "Enable development of beanOS and Lagom libraries and applications",
+    "options": {
+        "llvm_version": {
+            "type": "string",
+            "proposals": [
+                15,
+                16,
+                "trunk"
+            ],
+            "default": 16,
+            "description": "Select LLVM compiler version to use"
+        },
+        "enable_beansplorer": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Qt6 packages for beanSplorer development"
+        },
+        "enable_beanos": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install packages for beanOS development"
+        }
+    }
+}
